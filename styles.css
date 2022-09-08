@@ -1,8 +1,8 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
     
 }
 /*styling the login page*/
@@ -14,20 +14,20 @@ flex-flow: column;
  display: flex;
  margin-bottom: 10px;
  height: 90vh;
- min-height: 700px !important;
+ min-height: 700px ;
 }
 .footer{
-    margin-top: 17px;
+margin-top: 17px;
 }
 
 .background>img{
-    display: flex;
-    height: 70%;
-    width: 500px;
+display: flex;
+height: 70%;
+width: 500px;
     
 }
 .background{
- height: 90vh;
+ height: 90%;
  display: flex;
  justify-content: center;
  background: url(./hero.png);
@@ -53,25 +53,25 @@ flex-flow: column;
     
 }
 .login>h1{
-    font-size:60px;
-    padding-top: 20px;
+font-size:60px;
+padding-top: 20px;
 
 }
 .login>h2{
-    padding-top: 30px;
+padding-top: 30px;
 }
 .login>h5{
-    padding-top: 20%;
+padding-top: 20%;
 }
 .login>p{
-    font-size: 10px;
-    width: 40%;
-    color: gray;
-    margin-top: 10px;
+font-size: 10px;
+width: 40%;
+color: gray;
+margin-top: 10px;
 }
 .login>p>span{
    
-    color:rgb(124, 183, 250) ;
+color:rgb(124, 183, 250) ;
 }
 .btn-blue{
 color: white;
@@ -82,20 +82,20 @@ border: 0px;
 margin-top: 30px;
 }
 .btn-white{
-    color:rgb(104, 169, 243);
-    background-color: white;
-    font-weight: bold;
-    font-size: 13px;
-    border: 1px solid rgb(104, 169, 243);
-    margin-top: 30px;
+color:rgb(104, 169, 243);
+background-color: white;
+font-weight: bold;
+font-size: 13px;
+border: 1px solid rgb(104, 169, 243);
+margin-top: 30px;
 }
 .login>input{
-    height: 40px;
-    width: 250px;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding-left: 5%;
-    border: 1px solid gray;
+height: 40px;
+width: 250px;
+margin-top: 10px;
+border-radius: 20px;
+ padding-left: 5%;
+ border: 1px solid gray;
 
     
 }
@@ -105,15 +105,45 @@ margin-top: 30px;
     font-size: small;
 
 }
+#page-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .popup{
-    display: none;
-    background-color: white;
-    width: 70vw;
-    height: 70vh;
+    background-color: azure;
+    width: 40vw;
+    height: 80vh;
     position: absolute;
     z-index: 1;
-    margin: 20vh 15vh 35vh 40vh;
-    border: 1px solid black;
+    left: 35%;
+    top: 20%;
+    border-radius: 5px;
+    padding: 20px;
+}
+.popup>input{
+    height: 40px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding-left: 5%;
+    border: 1px solid gray;
+}
+.popup>button{
+margin-left: 25%;
+margin-top: 20px;
+}
+.popup>h4{
+    margin-top: 10px;
+}
+.tallinput{
+    width: 80% !important;
+}
+.popup>h5{
+    margin-top: 10px;
 }
 /*Utilizes*/
 .btn{
@@ -123,6 +153,9 @@ margin-top: 30px;
     margin-top: 20px;
 
 }
+.display{
+    display: block  !important;
+}
 
 @media only screen and (max-width: 800px) {
     .mobile {
@@ -130,9 +163,22 @@ margin-top: 30px;
     }
     .upper_side{
         flex-direction: column-reverse;
+        min-height: 1000px;
 
     }
     .background{
     width: 100vw !important;
+    height: 30vw;
     }
+    .popup{
+        width: 100vw;
+        left: 0 ;
+        top: 0;
+        bottom: 0;
+        height: auto;
+    }
+    .none{
+        display: none;
+    }
+
 }
