@@ -12,7 +12,7 @@ flex-flow: column;
 }
 .upper_side{
  display: flex;
-
+ margin-bottom: 10px;
  height: 90vh;
 }
 
@@ -30,11 +30,10 @@ flex-flow: column;
  
 }
 .login{
- display: flex;  
- flex-flow: column;
+
  min-width: 50%;
  padding: 10px 30px;
-border-radius: 20px;
+
 }
 .login>img{
     width:40px;
@@ -49,6 +48,9 @@ border-radius: 20px;
 .login>h2{
     padding-top: 30px;
 }
+.login>h5{
+    padding-top: 20%;
+}
 .login>p{
     font-size: 10px;
     width: 40%;
@@ -61,16 +63,27 @@ border-radius: 20px;
 }
 .btn-blue{
 color: white;
-background-color: rgb(124, 183, 250);
+background-color:rgb(104, 169, 243);
 font-weight: bold;
 font-size: 13px;
 border: 0px;
 margin-top: 30px;
 }
+.btn-white{
+    color:rgb(104, 169, 243);
+    background-color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid rgb(104, 169, 243);
+    margin-top: 30px;
+}
 .login>input{
-    width: 40%;
-    height: 5%;
-    margin-top: 20px;
+    height: 30px;
+    width: 220px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding-left: 5%;
+    border: 1px solid gray;
 
     
 }
@@ -92,8 +105,8 @@ margin-top: 30px;
 }
 /*Utilizes*/
 .btn{
-    height: 7%;
-    width: 40%;
+    height: 30px;
+    width: 220px;
     border-radius: 20px;
     margin-top: 20px;
 }
