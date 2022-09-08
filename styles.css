@@ -1,0 +1,61 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+}
+/*styling the login page*/
+.maincontainer{
+display: flex;
+flex-flow: column;
+}
+.upper_side{
+ display: flex;
+
+ height: 90vh;
+}
+.login{
+ display: flex;  
+ flex-flow: column;
+min-width: 50%;
+padding: 10px 10px;
+}
+.background>img{
+    display: flex;
+    height: 70%;
+    
+}
+.background{
+ max-width: 50%;
+ display: flex;
+ justify-content: center;
+ background: url(./hero.png);
+ padding: 15px 15px;
+ 
+}
+.login>img{
+    width:40px;
+    padding: 20px 40px;
+    
+}
+.login>h1{
+    font-size:70px;
+    padding-right: 5%;
+}
+.footer{
+    padding: 15px 30px;
+    color: rgb(146, 144, 144);
+    font-size: small;
+
+}
+.popup{
+    display: none;
+    background-color: white;
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    z-index: 1;
+    margin: 20vh 15vh 35vh 40vh;
+    border: 1px solid black;
+}
