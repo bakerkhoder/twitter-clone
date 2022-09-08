@@ -105,7 +105,8 @@ border-radius: 20px;
     font-size: small;
 
 }
-#page-mask {
+.page-mask{
+    
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -114,6 +115,7 @@ border-radius: 20px;
     left: 0;
 }
 .popup{
+    display: none;
     background-color: azure;
     width: 40vw;
     height: 80vh;
