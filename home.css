@@ -1,0 +1,249 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+/*home page*/
+.homepage{
+    display: flex;
+    height: 100%;
+}
+
+
+
+/*left-side navbar*/
+.left-side-navbar{
+
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    justify-content: space-around;
+}
+.left-side-navbar>*{
+  padding: 4% 10% 4% 15%;
+}
+.logo{
+    width: 28px;
+    height: 23px;
+}
+
+
+/*display tweet*/
+
+.display-tweet{
+    width: 44%;
+    background-color: red;
+    overflow-y: auto;
+}
+
+
+/*who to follow */
+.who-to-follow{
+    width:33%;
+    background-color:white;
+    overflow-y: auto;
+    padding: 1% 1% 2% 2%;
+}
+/*search bar icon*/
+.searchbar{
+    background-color: white;
+    height: 20px;
+    max-width: 100px;
+
+  
+    right: 20px;
+    
+}
+
+
+/* search form */
+#wrap {
+    text-align: center;
+}
+
+#nav-search {
+    margin: 0 auto;
+    position: relative;
+    width: 20px;
+}
+
+#nav-search input {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    width: 163px;
+    height: 14px;
+    padding: 6px 27px 6px 12px;
+    cursor: pointer;
+    color: rgb(102, 102, 102);
+    background-color: rgb(204, 204, 204);
+    border: none;
+    border-radius: 13px 13px 13px 13px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+#nav-search .icon {
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 4px;
+    width: 14px;
+    height: 15px;
+    background: url("https://abs.twimg.com/a/1374049044/t1/img/twitter_web_sprite_icons.png") -20px -710px no-repeat transparent;
+    border: none;
+    text-indent: -200px;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*mytweet*/
+.mytweet{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+
+.tweet-container{
+    height: 60%;
+    width: 100%;
+  
+}
+
+.image-container {
+    width: 10%;
+    height: 10%;
+    border-radius: 100px;
+}
+
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100px;
+}
+
+.input-container{
+    padding-left: 10%;
+    padding-top: 5%;
+    width:100%;
+}
+
+.input-container>input{
+    font-size: 1rem;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-radius: 0;
+        border-width: 1px;
+        width: 100%;
+        border-bottom: 0;
+    }
+
+
+        .tweet {
+            width: 200px;
+            height: 500px;
+        }
+
+/**/
+.tweet-actions{
+    display: flex;
+    width: 100%;
+    height:30% ;
+    justify-content: space-around;
+    border-top: 1px solid rgb(170, 167, 167);
+    padding-top: 2%;
+
+}
+.image-uploader{
+    width: 10%;
+   height: 30px;
+   align-items: center;
+   
+}
+
+
+.image-uploader>img {
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+/*tweet card*/
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+}
+
+  
+
+
+/*who to follow*/
+.who-to-follow{
+   
+}
+.suggestions{
+    background-color: rgb(233, 230, 230);
+    border-radius: 10px;
+}
+
+
+/*Utilizes*/
+.btn{
+    height: 40px;
+        width: 90px;
+        border-radius: 20px;
+}
+.btn-blue{
+
+    color: white;
+        background-color: rgb(104, 169, 243);
+        font-weight: bold;
+        font-size: 13px;
+        border: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+.left-side-navbar{
+    width: 10%;
+}
+.display-tweet{
+    width: 50%;
+}
+.who-to-follow{
+    width: 40%;
+
+}
+}
+@media only screen and (max-width: 900px) {
+    .left-side-navbar {
+        width: 10%;
+    }
+
+    .display-tweet {
+        width: 90%;
+    }
+
+    .who-to-follow {
+        width: 0%;
+        display: none;
+
+    }
+}
